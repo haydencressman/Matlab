@@ -1,6 +1,7 @@
 %this program will take two normal vectors and do the math for them to be
 %combined and turned into magnitude and unit vector
 clc
+
 first = input('Enter first vector with [] around the digits: ');
 second = input('Enter second vector with [] around the digits: ');
 
