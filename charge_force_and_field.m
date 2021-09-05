@@ -1,7 +1,7 @@
 %this program gets the force and the electric field intensity of two
 %charges acting upon one another
 clear
-clc
+
 first = input("enter first charge vector: ");
 second = input("enter second charge vector: ");
 decision = input('Please choose whether to add or subtract vectors. 1 for add, 0 for subtract: ');

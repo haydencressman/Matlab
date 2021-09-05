@@ -1,4 +1,6 @@
 %code to find the magnitude and unit vector of a single vector
+
+clear
 xvalue = "input x value:";
 yvalue = "input y value:";
 zvalue = "input z value:";
