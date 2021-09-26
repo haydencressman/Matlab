@@ -1,5 +1,5 @@
 %this program gets the force and the electric field intensity of two
-%charges acting upon one another
+%point charges acting upon one another
 clear
 
 first = input("enter first charge vector: ");
