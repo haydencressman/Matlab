@@ -36,4 +36,4 @@ Xm = Znl - x1;
 R1 = Rstat;
 R2 = Req - R1;
 
-fprintf('R1: %.3f     R2: %.3f \nX1: %.3f     X2: %.3f \nRc: %.3f  Xm: %.3f\n',R1,R2,x1, x2, Rc, Xm);
+fprintf('Circuit Parameters for the input data are as follows - \nR1: %.3f     R2: %.3f \nX1: %.3f     X2: %.3f \nRc: %.3f  Xm: %.3f\n',R1,R2,x1, x2, Rc, Xm);
