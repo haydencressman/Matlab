@@ -11,8 +11,8 @@ syms s t
 stuff = conv([1,1], [1,2])
 more = conv(stuff, [1,3])
 [r,p,k] = residue([2], [1 6 11 6])
-num  = [2]; %put the numerator coefficients here in decreasing power
-den = [1 6 11 6]; % put the denominator coefficients here in decreasing power
+num  = [1 0]; %put the numerator coefficients here in decreasing power
+den = [1 3 2]; % put the denominator coefficients here in decreasing power
 G = tf(num,den) % this is just a transfer function object that holds little value
 
 [A,B,C,D] = tf2ss(num,den) %these are the state space variables
@@ -22,4 +22,4 @@ sden = poly2sym(den,s);
 
 
 [top,bot] = ss2tf(A,B,C,D) % this converts it back into numerator and denominator
-FT_time_domain = ilaplace(snum/sden,t)
+FT_time_domain = ilaplace(snum/sden)
