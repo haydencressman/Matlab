@@ -7,8 +7,8 @@ clc
 % close all
 syms s t
 % Enter the numerator and denominator coefficient arrays.
-n=[5 4];
-d=[1 3 2];
+n=[1 6];
+d=[1 6 8];
 % Show the transfer function.
 Hs=tf(n,d)
 % Convert the system into a state-variable model.
@@ -48,7 +48,7 @@ pretty(Phits)
 top = [k1]
 bot = [1 k1+k2 k1*k2]
 
-sent = tf(top,bot)
-GpssObs = canon(Gp,'companion')
+%sent = tf(top,bot)
+%GpssObs = canon(Gp,'companion')
 %
 
