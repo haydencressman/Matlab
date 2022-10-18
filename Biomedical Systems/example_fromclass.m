@@ -7,8 +7,8 @@ clc
 % close all
 syms s t
 % Enter the numerator and denominator coefficient arrays.
-n=[1 6];
-d=[1 6 8];
+n=[2 4];
+d=[1 2 2];
 % Show the transfer function.
 Hs=tf(n,d)
 % Convert the system into a state-variable model.
