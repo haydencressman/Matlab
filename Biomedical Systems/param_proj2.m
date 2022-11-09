@@ -1,0 +1,1 @@
+%put the constants here for the simulink
