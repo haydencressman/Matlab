@@ -4,8 +4,8 @@ k = (1/7);
 %example porblem
 % G=(s+1)/(s(s+4))
 conv([1 0],conv([1 2],[1 4]));
-top = [k -7*k 12*k];
-bot = [1+k (3-7*k) 2+k];
+top = [1 2];
+bot = [1 -4 13];
 
 G = tf(top,bot)
 P = pole(G);
