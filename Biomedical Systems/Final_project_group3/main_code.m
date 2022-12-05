@@ -1,0 +1,16 @@
+C = 1;
+Gna = 30;
+Gk = 25;
+Gnal = .0247;
+Gkl = .05;
+Gcil = .1;
+beta = 7;
+Rhom = .8;
+Gglia = 5;
+epsk = .25;
+Kbath = 3.5;
+epso = .17;
+alph = 5.3;
+O2 = 32;
+Ukcc = .3;
+Unkcc = .1;

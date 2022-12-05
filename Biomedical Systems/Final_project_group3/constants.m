@@ -1,4 +1,4 @@
-function c = constants()
+function c = constantine()
 %CONSTANTS Summary of this function goes here
 %   Detailed explanation goes here
 c.C = 1;
