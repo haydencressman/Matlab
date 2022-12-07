@@ -3,12 +3,14 @@
 % and root locus purposes
 
 % Open-Loop Transfer function is given by
-
-top = [-5625000, 7031250];
+k = 1e-5;
+top = [k*(-5625000), k*7031250];
 den = conv([1,.667],conv([1,5],[1,50]));
 
 Gop = tf(top,den);
 P = pole(Gop)
+figure;
+nyquistplot(Gop);
 figure;
 rlocusplot(Gop);
 Gm = margin(Gop)
@@ -25,7 +27,7 @@ step(Gop);
 
 % Closed-Loop function with k
 syms s k;
-k = 5.5e-5;
+k = 1e-5;
 topcl = [-5625000*k 7031250*k];
 botcl = [1 55.67 (286.73-5625000*k) (166.8+7031250*k)];
 
@@ -33,6 +35,7 @@ tfcl = tf(topcl,botcl)
 P = pole(tfcl)
 figure;
 step(tfcl)
+nyquistplot(tfcl);
 
 
 
